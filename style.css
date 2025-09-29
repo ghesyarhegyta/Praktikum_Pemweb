@@ -112,3 +112,13 @@ footer{
   margin-top:2rem;
 }
 footer a{color:#fff;text-decoration:underline}
+
+.hero-text {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .hero-text {
+  color: #f9f9f9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
