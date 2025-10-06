@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  background: #fffafc;
+  color: #444;
+}
+
+header {
+  background: url("ceri.jpg") center/cover no-repeat;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffe0f0;
+}
+
+#hero {
+  background: linear-gradient(to bottom, #ffeef4, #fffafc);
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+#hero h2 {
+  font-size: 2rem;
+  color: #ff82a9;
+  margin-bottom: 1rem;
+}
+#hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #ff82a9;
+  color: #fff;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #ff6f98;
+}
+
+#ingredients {
+  background: #fff4f8;
+  padding: 3rem 1.5rem;
+}
+#ingredients h2 {
+  text-align: center;
+  color: #ff82a9;
+  margin-bottom: 2rem;
+}
+.card-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.card h3 {
+  font-size: 1.25rem;
+  color: #ff82a9;
+  margin-bottom: 0.6rem;
+}
+@media (min-width: 700px) {
+  .card-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+#contact {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+#contact h2 {
+  color: #ff82a9;
+  margin-bottom: 1rem;
+}
+#contact a {
+  color: #ff82a9;
+  font-weight: 600;
+}
+
+footer {
+  background: #ffb6c1;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 2rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.hero-text {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .hero-text {
+  color: #f9f9f9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
